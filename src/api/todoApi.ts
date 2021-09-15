@@ -2,8 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as os from 'os'
 
-const devDir:string = "\\Documents\\MEGAsync\\1_OneDrive\\Javascript\\Bootcamp_2021\\oclif-todo\\";
-const todoFile = path.join(os.homedir() + devDir, 'shkhaider2015', 'todos.json')
+const todoFile = path.join(os.homedir(), 'shkhaider2015', 'todos.json')
 
 interface Todo {
   done: boolean;
@@ -14,7 +13,9 @@ class TodoAPI {
   private todos : Todo[] = []
 
   constructor () {
-    this.todos = JSON.parse(fs.readFileSync(todoFile, { encoding: 'utf-8' }))
+      if (fs.existsSync(path.dirname(todoFile))) {
+        this.todos = JSON.parse(fs.readFileSync(todoFile, { encoding: 'utf-8' }))
+      }
   }
 
   private saveTodos () {
