@@ -2,7 +2,7 @@
   "name": "shkhaider2015",
   "description": "a command line tool",
   "version": "0.0.0",
-  "author": "Shakeel Haider @shkhaider2015",
+  "author": "Shakeel Haider",
   "bin": {
     "shkhaider2015": "./bin/run"
   },

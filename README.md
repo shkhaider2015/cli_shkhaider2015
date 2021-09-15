@@ -3,11 +3,6 @@ shkhaider2015
 
 a command line tool
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/shkhaider2015.svg)](https://npmjs.org/package/shkhaider2015)
-[![Downloads/week](https://img.shields.io/npm/dw/shkhaider2015.svg)](https://npmjs.org/package/shkhaider2015)
-[![License](https://img.shields.io/npm/l/shkhaider2015.svg)](https://github.com/shkhaider2015/cli_shkhaider2015/blob/master/package.json)
-
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
@@ -28,24 +23,19 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`shkhaider2015 add [FILE]`](#shkhaider2015-add-file)
+* [`shkhaider2015 add [TODO]`](#shkhaider2015-add-todo)
 * [`shkhaider2015 hello [FILE]`](#shkhaider2015-hello-file)
 * [`shkhaider2015 help [COMMAND]`](#shkhaider2015-help-command)
-* [`shkhaider2015 list [FILE]`](#shkhaider2015-list-file)
-* [`shkhaider2015 remove [FILE]`](#shkhaider2015-remove-file)
+* [`shkhaider2015 list`](#shkhaider2015-list)
+* [`shkhaider2015 remove [INDEX]`](#shkhaider2015-remove-index)
 
-## `shkhaider2015 add [FILE]`
+## `shkhaider2015 add [TODO]`
 
-describe the command here
+Add new todo to list
 
 ```
 USAGE
-  $ shkhaider2015 add [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ shkhaider2015 add [TODO]
 ```
 
 _See code: [src/commands/add.ts](https://github.com/shkhaider2015/cli_shkhaider2015/blob/v0.0.0/src/commands/add.ts)_
@@ -87,34 +77,24 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
 
-## `shkhaider2015 list [FILE]`
+## `shkhaider2015 list`
 
-describe the command here
+Print out all todos
 
 ```
 USAGE
-  $ shkhaider2015 list [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ shkhaider2015 list
 ```
 
 _See code: [src/commands/list.ts](https://github.com/shkhaider2015/cli_shkhaider2015/blob/v0.0.0/src/commands/list.ts)_
 
-## `shkhaider2015 remove [FILE]`
+## `shkhaider2015 remove [INDEX]`
 
-describe the command here
+Remove a todo from list
 
 ```
 USAGE
-  $ shkhaider2015 remove [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ shkhaider2015 remove [INDEX]
 ```
 
 _See code: [src/commands/remove.ts](https://github.com/shkhaider2015/cli_shkhaider2015/blob/v0.0.0/src/commands/remove.ts)_
