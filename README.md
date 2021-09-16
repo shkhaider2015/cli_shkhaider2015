@@ -23,19 +23,22 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`shkhaider2015 add [TODO]`](#shkhaider2015-add-todo)
+* [`shkhaider2015 add [FILE]`](#shkhaider2015-add-file)
 * [`shkhaider2015 hello [FILE]`](#shkhaider2015-hello-file)
 * [`shkhaider2015 help [COMMAND]`](#shkhaider2015-help-command)
-* [`shkhaider2015 list`](#shkhaider2015-list)
-* [`shkhaider2015 remove [INDEX]`](#shkhaider2015-remove-index)
 
-## `shkhaider2015 add [TODO]`
+## `shkhaider2015 add [FILE]`
 
-Add new todo to list
+describe the command here
 
 ```
 USAGE
-  $ shkhaider2015 add [TODO]
+  $ shkhaider2015 add [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
 ```
 
 _See code: [src/commands/add.ts](https://github.com/shkhaider2015/cli_shkhaider2015/blob/v0.0.0/src/commands/add.ts)_
@@ -76,26 +79,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
-
-## `shkhaider2015 list`
-
-Print out all todos
-
-```
-USAGE
-  $ shkhaider2015 list
-```
-
-_See code: [src/commands/list.ts](https://github.com/shkhaider2015/cli_shkhaider2015/blob/v0.0.0/src/commands/list.ts)_
-
-## `shkhaider2015 remove [INDEX]`
-
-Remove a todo from list
-
-```
-USAGE
-  $ shkhaider2015 remove [INDEX]
-```
-
-_See code: [src/commands/remove.ts](https://github.com/shkhaider2015/cli_shkhaider2015/blob/v0.0.0/src/commands/remove.ts)_
 <!-- commandsstop -->

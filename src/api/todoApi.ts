@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as os from 'os'
 
-const todoFile = path.join(os.homedir(), 'shkhaider2015', 'todos.json')
+const todoFile = path.join(os.homedir(), 'mydata', 'todos.json')
 
 interface Todo {
   done: boolean;
@@ -13,9 +13,14 @@ class TodoAPI {
   private todos : Todo[] = []
 
   constructor () {
-      if (fs.existsSync(path.dirname(todoFile))) {
+    try {
+      if (fs.existsSync(todoFile)) {
+        //file exists
         this.todos = JSON.parse(fs.readFileSync(todoFile, { encoding: 'utf-8' }))
       }
+    } catch(err) {
+      console.error(err)
+    }
   }
 
   private saveTodos () {
